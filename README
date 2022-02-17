@@ -1,0 +1,10 @@
+Realisation pattern Page Object with pytest to website. 
+
+There are file with fixtures "conftest", where implementing a function with the name - web_driver
+ Next, we describe the part that will be executed before the tests. It initializes the webdriver with an indication of where the chromedriver is located. Next, we use the yield construction, which divides the function into parts - before the tests and after the tests.
+ 
+ The Pages folder has been created, where the files are located: base_page.py . In the BasePage class, we define the basic methods for working with WebDriver, as well as cart_page, login_page, main_page files, where we implement methods for working with the pages of the basket, login and the main page of the site.
+
+The "utils" folder contains a file with all locators and a file with links to the pages that are being tested
+
+The tests folder implements tests with checks. Pytest is used
